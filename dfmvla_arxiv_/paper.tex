@@ -1,0 +1,120 @@
+\documentclass[onecolumn]{openhelix}
+% Option "twocolumn" available, but please prioritize single-column
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{utfsym}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{wrapfig}
+\usepackage{xspace}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage[misc]{ifsym}
+\usepackage{mathtools}
+\usepackage{enumitem}
+
+\newcommand{\huggingface}{\raisebox{-1.5pt}{\includegraphics[height=1.05em]{assets/hf.pdf}}\xspace}
+\newcommand{\hfdataset}{\raisebox{-1.5pt}{\includegraphics[height=1.05em]{assets/db.pdf}}\xspace}
+\newcommand{\github}{\raisebox{-1.5pt}{\includegraphics[height=1.05em]{assets/github.pdf}}\xspace}
+
+\newcommand{\WX}[1]{\textcolor{red}{WX:~#1}}
+\newcommand{\ZH}[1]{\textcolor{blue}{NB:~#1}}
+\newcommand{\dist}{\operatorname{dist}}
+\usepackage[table]{xcolor}
+\definecolor{lightgrey}{HTML}{dcdbdb}
+\definecolor{lightblue}{HTML}{E8F0FE}
+\definecolor{gray}{HTML}{9aa0a6}
+\definecolor{lightpink}{HTML}{F48FB1}
+\definecolor{lightred}{HTML}{FFCBC9}
+\definecolor{lightcyan}{HTML}{80DEEA}
+\newcommand{\cc}[0]{\cellcolor{lightblue}}
+\newcommand{\cg}[0]{\cellcolor{lightgrey}}
+\definecolor{newyellow}{HTML}{FFD94D}
+\definecolor{newgrey}{HTML}{7F7F7F}
+\definecolor{newpink}{HTML}{FBCDF4}
+\definecolor{realworldoft}{HTML}{029533}
+\definecolor{realworldsf}{HTML}{8CC46A}
+\definecolor{realworldour}{HTML}{FFC715}
+\newcommand{\method}{DFM-VLA}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{theorems}
+\newtcbtheorem{finding}{Finding}{
+  colback=openhelixred!5,
+  colframe=openhelixred!60!black,
+  fonttitle=\bfseries,
+}{find}
+
+\title{DFM-VLA: Iterative Action Refinement for Robot Manipulation via Discrete Flow Matching} 
+
+
+% ORDER TBD
+\author[1,2*]{Jiayi Chen}
+\author[1*]{Wenxuan Song}
+\author[3,4]{Shuai Chen}
+\author[1]{Jingbo Wang}
+% \author[5]{Yan Wang}
+\author[2\dagger]{Zhijun Li}
+\author[1\dagger]{Haoang Li}
+
+\affiliation[1]{The Hong Kong University of Science and Technology (Guangzhou)}
+\affiliation[2]{Harbin Institute of Technology}
+\affiliation[3]{ShanghaiTech University}
+\affiliation[4]{Shanghai Institute of Technical Physics, CAS}
+% \affiliation[5]{Tsinghua University, AIR}
+
+\contribution[*]{Equal Contribution}
+\contribution[\dagger]{Corresponding Author}
+
+% You can add additional metadata fields as follows
+%\metadata[Code]{\url{https://github.com/openhelix-team/repo}}
+
+\input{sec/abstract}
+
+\correspondence{%
+\begin{tabular}[t]{@{}l@{\ }l@{}}
+Jiayi Chen at & \email{1952296@tongji.edu.cn}\\
+% Han Zhao at & \email{zhaohan34@westlake.edu.cn}
+\end{tabular}%
+}
+
+\begin{document}
+
+\maketitle
+
+\input{sec/introduction}
+\input{sec/relatedwork}
+\input{sec/method}
+\input{sec/experiment}
+\input{sec/conclusion}
+
+% \section{Acknowledgments}
+
+% \clearpage
+% \newpage
+\bibliographystyle{assets/plainnat}
+\bibliography{paper}
+
+\clearpage
+\newpage
+\onecolumn
+\beginappendix
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
+
+\input{sec/appendix}
+
+
+
+\end{document}

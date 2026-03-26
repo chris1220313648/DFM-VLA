@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFM-VLA: Iterative Action Refinement for Robot Manipulation via Discrete Flow Matching</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">DFM-VLA</a>
+            <ul class="nav-links">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#demo">Demos</a></li>
+                <li><a href="#paper">Citation</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">DFM-VLA</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Iterative Action Refinement for Robot Manipulation via Discrete Flow Matching
+                </p>
+
+                <div class="authors">
+                    <div class="author-list">
+                        <span class="author">Jiayi Chen<sup>1,2*</sup></span>
+                        <span class="author">Wenxuan Song<sup>1*</sup></span>
+                        <span class="author">Shuai Chen<sup>3,4</sup></span>
+                        <span class="author">Jingbo Wang<sup>1</sup></span>
+                        <span class="author">Yan Wang<sup>5</sup></span>
+                        <span class="author">Zhijun Li<sup>2&dagger;</sup></span>
+                        <span class="author">Haoang Li<sup>1&dagger;</sup></span>
+                    </div>
+                    <div class="affiliations">
+                        <span class="affil"><sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou)</span>
+                        <span class="affil"><sup>2</sup>Harbin Institute of Technology</span>
+                        <span class="affil"><sup>3</sup>ShanghaiTech University</span>
+                        <span class="affil"><sup>4</sup>Shanghai Institute of Technical Physics, CAS</span>
+                        <span class="affil"><sup>5</sup>Tsinghua University, AIR</span>
+                    </div>
+                    <p class="email">* Equal Contribution | &dagger; Corresponding Authors</p>
+                    <p class="email">Correspondence: Jiayi Chen at 1952296@tongji.edu.cn</p>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="dfmvla_arxiv_/paper.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-pdf"></i> Paper
+                    </a>
+                    <a href="#results" class="btn btn-secondary">
+                        <i class="fas fa-chart-line"></i> Results
+                    </a>
+                    <a href="#real-world" class="btn btn-secondary">
+                        <i class="fas fa-robot"></i> Real-World
+                    </a>
+                    <a href="#demo" class="btn btn-secondary">
+                        <i class="fas fa-video"></i> Demos
+                    </a>
+                    <span class="btn btn-secondary" aria-disabled="true">
+                        <i class="fas fa-code"></i> Code (Coming Soon)
+                    </span>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">4.44</span>
+                        <span class="stat-label">CALVIN Avg. Len.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">95.7%</span>
+                        <span class="stat-label">LIBERO Avg.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">70.8%</span>
+                        <span class="stat-label">Real-World Avg.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <section id="abstract" class="section abstract-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Abstract</h2>
+            </div>
+            <div class="abstract-content">
+                <div class="abstract-card">
+                    <div class="teaser-image">
+                        <img src="assets/figure/method_compare.png" alt="Comparison of discrete VLA paradigms" class="method-image">
+                    </div>
+                    <p class="abstract-text">
+                        Vision-Language-Action models that use discrete action tokenization are increasingly popular for robotic manipulation, but existing decoding paradigms remain constrained by a shared weakness: once an action token is generated, it is usually fixed and cannot be corrected in later iterations.
+                    </p>
+                    <p class="abstract-text">
+                        <strong>DFM-VLA</strong> addresses this limitation with discrete flow matching for iterative action refinement. Instead of committing to a final token sequence in one pass, DFM-VLA models a token-level probability velocity field that updates the full action sequence over multiple refinement steps. The paper studies both an action-embedding-guided velocity formulation and an auxiliary velocity-head formulation.
+                    </p>
+                    <p class="abstract-text">
+                        A two-stage decoding pipeline combines iterative refinement with deterministic validation for stable convergence. Across CALVIN, LIBERO, and real-world manipulation, DFM-VLA consistently improves manipulation quality while keeping strong inference efficiency, reaching <strong>4.44</strong> average success length on CALVIN and <strong>95.7%</strong> average success rate on LIBERO.
+                    </p>
+                </div>
+
+                <div class="key-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-rotate"></i>
+                        </div>
+                        <h3>Iterative Refinement</h3>
+                        <p>Previously generated action tokens can be revised instead of being permanently fixed after one prediction.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h3>Velocity Field Modeling</h3>
+                        <p>DFM-VLA learns token-level transition rates that guide action updates toward cleaner trajectories.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <h3>Two-Stage Decoding</h3>
+                        <p>Iterative refinement is followed by deterministic validation for more stable final action sequences.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Efficient Inference</h3>
+                        <p>Adaptive KV caching provides up to 2.4x latency speedup over autoregressive decoding while preserving performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="method" class="section method-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Method</h2>
+                <p class="section-subtitle">Unified discrete token modeling with flow-based action refinement</p>
+            </div>
+
+            <div class="method-overview">
+                <div class="method-visual">
+                    <img src="assets/figure/model.png" alt="DFM-VLA overall architecture" class="method-image">
+                    <p class="figure-caption">Training schematic of DFM-VLA. The model predicts clean actions from noised action tokens and learns the velocity field during training.</p>
+                </div>
+
+                <div class="method-steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Unified Tokenization</h3>
+                            <p>DFM-VLA follows a UniVLA-style discrete formulation where language, third-view images, wrist-view images, and actions are all represented as discrete tokens.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Velocity-Guided Action Updates</h3>
+                            <p>The model predicts a clean target action sequence and constructs a probability velocity field that tells each token how to move toward better actions over time.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Embedding-Guided or Head-Based Velocities</h3>
+                            <p>The paper studies two constructions: an embedding-guided formulation built from token distances and a separate velocity head that predicts replacement rates directly.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Refinement Then Validation</h3>
+                            <p>Inference first performs stochastic iterative refinement with CTMC Euler updates, then switches to a short deterministic validation phase for stable final convergence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-block">
+                <h3 class="subsection-title">Inference</h3>
+                <div class="performance-chart">
+                    <img src="assets/figure/inference_one_step.png" alt="One decoding step of DFM-VLA inference" class="result-image" style="width: 92%; margin: 0 auto; display: block;">
+                </div>
+                <p class="figure-caption">Inference visualization of one refinement step. DFM-VLA updates action tokens iteratively instead of fixing them after a single prediction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="section results-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Results</h2>
+                <p class="section-subtitle">Simulation and real-world evaluations of iterative action refinement</p>
+            </div>
+
+            <div class="result-block">
+                <h3 class="subsection-title">Simulation Experiments</h3>
+            </div>
+
+            <div class="result-block simulation-grid">
+                <div class="figure-card">
+                    <img src="assets/figure/sim_calvin.png" alt="DFM-VLA simulation results on CALVIN" class="result-image">
+                    <p class="figure-caption">Simulation benchmark figure on CALVIN.</p>
+                </div>
+                <div class="figure-card">
+                    <img src="assets/figure/sim_libero.png" alt="DFM-VLA simulation results on LIBERO" class="result-image">
+                    <p class="figure-caption">Simulation benchmark figure on LIBERO.</p>
+                </div>
+                <div class="result-highlight">
+                    <span class="result-value">95.7%</span>
+                    <span class="result-label">LIBERO average success with DFM-VLA + Embed</span>
+                </div>
+                <div class="setup-info">
+                    <h4>Benchmark Highlights</h4>
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> Achieves the best CALVIN average success length of 4.44.</li>
+                        <li><i class="fas fa-cubes"></i> Reaches 98.8% on LIBERO-Object and 92.6% on LIBERO-Long.</li>
+                        <li><i class="fas fa-chart-line"></i> Embedding-guided velocity modeling converges faster and stronger than the auxiliary velocity-head variant.</li>
+                        <li><i class="fas fa-brain"></i> Improves over DreamVLA by +3.1 on LIBERO average and over FlowVLA by +7.6.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="real-world" class="result-block real-world">
+                <h3 class="subsection-title">Real-World Experiments</h3>
+                <div class="real-figure-stack">
+                    <div class="figure-card">
+                        <img src="assets/figure/real_set.png" alt="DFM-VLA real-world setup and representative tasks" class="result-image">
+                        <p class="figure-caption">Experimental setup and representative real-world task scenes.</p>
+                    </div>
+                </div>
+                <div class="real-world-content">
+                    <div class="setup-info">
+                        <h4>Experimental Setup</h4>
+                        <ul>
+                            <li><i class="fas fa-robot"></i> Bimanual AgileX platform with two 6-DoF robotic arms and parallel grippers.</li>
+                            <li><i class="fas fa-camera"></i> Three RGB cameras: one central elevated view and two wrist-mounted views.</li>
+                            <li><i class="fas fa-database"></i> 100 trajectories collected for training on each task.</li>
+                            <li><i class="fas fa-vial"></i> 40 evaluation trials per task, reporting success rate and completion speed.</li>
+                            <li><i class="fas fa-microchip"></i> Compared against pi_0-FAST, Dream-VLA, and the continuous diffusion baseline RDT.</li>
+                        </ul>
+                    </div>
+                    <div class="setup-info">
+                        <h4>Task Summary</h4>
+                        <ul>
+                            <li><i class="fas fa-hands-helping"></i> <strong>Pot Lift:</strong> bimanual collaborative lifting requiring precise coordination.</li>
+                            <li><i class="fas fa-carrot"></i> <strong>Place Veg. to Pot:</strong> grasp elongated vegetables and place them into the pot under varied poses.</li>
+                            <li><i class="fas fa-cube"></i> <strong>Place Block to Plate:</strong> place a block on a plate with varying height for spatial precision.</li>
+                            <li><i class="fas fa-medal"></i> <strong>DFM-VLA + Embed</strong> achieves 77.5%, 70.0%, and 65.0% on the three tasks, averaging 70.8%.</li>
+                        </ul>
+                        <p class="abstract-text" style="margin-top: 20px; margin-bottom: 0;">
+                            The real-world average of 70.8% surpasses RDT by 10.8 points and Dream-VLA by 16.6 points, showing that iterative refinement remains highly competitive outside simulation.
+                        </p>
+                    </div>
+                </div>
+                <div class="real-figure-stack">
+                    <div class="figure-card">
+                        <img src="assets/figure/real.png" alt="DFM-VLA real-world experiment figure" class="result-image">
+                        <p class="figure-caption">Real-world performance comparison across the three tasks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="demo" class="result-block demo-results">
+                <h3 class="subsection-title">Demos</h3>
+                <p style="font-size: 0.9em; color: #666; margin-bottom: 24px; margin-top: -16px;">Representative real-world rollouts from the three DFM-VLA tasks in the paper.</p>
+
+                <div class="task-demo-row">
+                    <div class="task-demo-header">
+                        <div class="task-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="task-title">
+                            <h4>Pot Lift and Place Veg. to Pot</h4>
+                            <p class="task-instruction">The first row combines one Pot Lift rollout with two Place Veg. to Pot rollouts.</p>
+                        </div>
+                    </div>
+                    <div class="task-demo-videos">
+                        <div class="video-card">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata">
+                                    <source src="assets/demo/Pot Lift.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h4>Pot Lift</h4>
+                                <p>Representative real-world DFM-VLA execution for precise bimanual coordination.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata">
+                                    <source src="assets/demo/Place Veg. to Pot.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h4>Place Veg. to Pot 1</h4>
+                                <p>Generalization to different object positions and orientations.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata">
+                                    <source src="assets/demo/Place Veg. to Pot 2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h4>Place Veg. to Pot 2</h4>
+                                <p>Second rollout showing robust placement under varied real-world conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-demo-row">
+                    <div class="task-demo-header">
+                        <div class="task-icon"><i class="fas fa-cube"></i></div>
+                        <div class="task-title">
+                            <h4>Place Block to Plate</h4>
+                            <p class="task-instruction">Place a block onto a plate with changing height and spatial layout.</p>
+                        </div>
+                    </div>
+                    <div class="task-demo-videos">
+                        <div class="video-card small">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata">
+                                    <source src="assets/demo/Place Block to Plate.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h4>Demo 1</h4>
+                                <p>Baseline spatial precision case for varying plate geometry.</p>
+                            </div>
+                        </div>
+                        <div class="video-card small">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata">
+                                    <source src="assets/demo/Place Block to Plate 2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h4>Demo 2</h4>
+                                <p>Alternative rollout with different relative placement conditions.</p>
+                            </div>
+                        </div>
+                        <div class="video-card small">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata">
+                                    <source src="assets/demo/Place Block to Plate 3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h4>Demo 3</h4>
+                                <p>Third rollout illustrating stable placement under height variation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paper" class="section paper-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Citation</h2>
+            </div>
+            <div class="paper-content">
+                <div class="paper-info">
+                    <div class="citation-box">
+                        <pre><code>@misc{chen2026dfmvla,
+  title        = {DFM-VLA: Iterative Action Refinement for Robot Manipulation via Discrete Flow Matching},
+  author       = {Jiayi Chen and Wenxuan Song and Shuai Chen and Jingbo Wang and Zhijun Li and Haoang Li},
+  year         = {2026},
+  note         = {Preprint},
+  howpublished = {Project PDF: dfmvla_arxiv_/paper.pdf}
+}</code></pre>
+                        <button class="copy-btn" onclick="copyCitation()">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>DFM-VLA</span>
+                </div>
+                <p class="footer-text">
+                    HKUST (Guangzhou), Harbin Institute of Technology, ShanghaiTech University, and Shanghai Institute of Technical Physics
+                </p>
+                <p class="footer-copy">
+                    &copy; 2026 DFM-VLA. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

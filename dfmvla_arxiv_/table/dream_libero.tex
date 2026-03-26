@@ -1,0 +1,90 @@
+% \begin{table}[t]
+%     \footnotesize
+%     % \renewcommand{\arraystretch}{1.2}
+%     \setlength{\tabcolsep}{5pt}
+%     \centering
+%     \caption{\textbf{Comprehensive Evaluation of Long-Horizon Robotic Manipulation on the CALVIN Benchmark.} UniVLA$^{*}$ denotes the variant without historical frames for fair comparison.}
+%     \begin{tabular}{l l c c c c c c}
+%         \toprule
+%         \textbf{Method}  & \textbf{Task} & \multicolumn{5}{c}{\textbf{Tasks Completed in a Row}} & \textbf{Avg. Len $\uparrow$} \\
+%         \cmidrule(lr){3-7}
+%         &  & 1 & 2 & 3 & 4 & 5 & \\
+%         \midrule
+%         MCIL~\citep{lynch2020language} & ABCD$\rightarrow$D &0.373 & 0.027 & 0.002 & 0.000 & 0.000 & 0.40\\
+%         RT-1~\citep{brohan2022rt}  & ABCD$\rightarrow$D & 0.844 & 0.617 & 0.438 & 0.323 & 0.227 & 2.45 \\
+%         Robo-Flamingo~\citep{li2024vision} & ABCD$\rightarrow$D & 0.964 & 0.896 & 0.824 & 0.740 & 0.660 & 4.09 \\
+%         GR-1~\citep{wu2023unleashing}  & ABCD$\rightarrow$D & 0.949 & 0.896 & 0.844 & 0.789 & 0.731 & 4.21 \\
+%         ReconVLA~\citep{song2025reconvla}  & ABCD$\rightarrow$D & 0.980 & 0.900 & 0.845 & 0.785 & 0.705 &  4.23 \\
+%         UP-VLA~\citep{zhang2025upvla}  & ABCD$\rightarrow$D & 0.962 & 0.921 & 0.879 & 0.842 & 0.812 & 4.42 \\
+%         UniVLA$^{*}$~\citep{univla}  & ABCD$\rightarrow$D & 0.958 & 0.918 & 0.874 & 0.846 & 0.824 & 4.42 \\
+%         % RoboVLMs~\citep{li2024towards} & ABCD$\rightarrow$D & 0.967 & 0.930 & 0.899 & 0.865 & 0.826 & 4.49 \\
+%         \rowcolor[gray]{0.9} \textbf{\method} & ABCD$\rightarrow$D & \textbf{0.992} & \textbf{0.968} & \textbf{0.936} & \textbf{0.904} & \textbf{0.840} & \textbf{4.64}\\
+%         \bottomrule
+%     \end{tabular}
+%     \label{tab:calvin_results}
+%     \vspace{-0.3cm}
+
+% \end{table}
+\begin{table*}[t]
+% \setlength{\tabcolsep}{4pt}
+% \renewcommand{\arraystretch}{0.9}
+\centering
+\small
+\caption{Comparison with various base models in terms of inference speed, task-wise success rates (SR), average SR, and execution frequency.}
+\label{tab:libero_ablation}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{} l c c c c c c c @{}}
+\toprule
+\multirow{2}{*}{Decoding Method} 
+& \multirow{2}{*}{Speed (Tokens/s)} 
+& \multicolumn{5}{c}{Success Rate (\%)} 
+& \multirow{2}{*}{Freq. (Hz)} \\
+\cmidrule(lr){3-7}
+& & Spatial & Goal & Object & Long & Avg. & \\
+\midrule
+Dream-VLA~\citep{yedreamVLA}
+& 98.8
+& 0.902 & 0.920 & 0.880 & 0.720 & 0.856
+&  \\
+
+\hspace{3mm} w/ Fast-dLLM  
+& 183.2
+& 0.884 &  0.894 &0.834 &  0.702 &  0.828  
+&  \\
+
+\hspace{3mm} w/ Block Diffusion  
+& 181.7 
+& 0.918 &0.904 & 0.886 &0.722  &  0.858
+&  \\
+
+\rowcolor[gray]{0.9} \hspace{3mm} w/ ours 
+& \textbf{313.1} 
+& 0.912 & 0.92 & 0.902 & 0.746 & 0.87 
+&  \\
+\midrule
+Discrete Difussion VLA~\citep{liang2025discrete}
+& 152.1
+& 0.972 & 0.986 & 0.974 & 0.920 & 0.963
+& - \\
+
+\hspace{3mm} w/ Fast-dLLM  
+& 312.5
+& 0.940 & 0.952 & 0.948 & 0.898 & 0.935
+& - \\
+
+\hspace{3mm} w/ Block Diffusion  
+& 322.1
+& 0.976 & 0.986 & 0.972 & 0.932 & 0.967
+& - \\
+
+\rowcolor[gray]{0.9} \hspace{3mm} w/ ours 
+& \textbf{402.7} 
+& 0.970 & 0.988 & 0.976 & 0.928 & 0.966
+& - \\
+
+\bottomrule
+\end{tabular}
+}
+% \vspace{-0.2cm}
+\end{table*}
+

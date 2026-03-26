@@ -1,0 +1,415 @@
+\begin{thebibliography}{53}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bjorck et~al.(2025)Bjorck, Casta{\~n}eda, Cherniadev, Da, Ding, Fan,
+  Fang, Fox, Hu, Huang, et~al.]{gr00t}
+Johan Bjorck, Fernando Casta{\~n}eda, Nikita Cherniadev, Xingye Da, Runyu Ding,
+  Linxi Fan, Yu~Fang, Dieter Fox, Fengyuan Hu, Spencer Huang, et~al.
+\newblock Gr00t n1: An open foundation model for generalist humanoid robots.
+\newblock \emph{arXiv preprint arXiv:2503.14734}, 2025.
+
+\bibitem[Black et~al.(2024)Black, Brown, Driess, Esmail, Equi, Finn, Fusai,
+  Groom, Hausman, Ichter, et~al.]{Pi0}
+Kevin Black, Noah Brown, Danny Driess, Adnan Esmail, Michael Equi, Chelsea
+  Finn, Niccolo Fusai, Lachy Groom, Karol Hausman, Brian Ichter, et~al.
+\newblock {$\pi_0$}: A vision-language-action flow model for general robot
+  control.
+\newblock \emph{arXiv preprint arXiv:2410.24164}, 2024.
+
+\bibitem[Brohan et~al.(2023)Brohan, Brown, Carbajal, Chebotar, Dabis, Finn,
+  Gopalakrishnan, Hausman, Herzog, Hsu, et~al.]{brohan2022rt}
+Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Joseph Dabis,
+  Chelsea Finn, Keerthana Gopalakrishnan, Karol Hausman, Alexander Herzog,
+  Jasmine Hsu, et~al.
+\newblock Rt-1: Robotics transformer for real-world control at scale.
+\newblock Robotics: Science and Systems Foundation, 2023.
+
+\bibitem[Cen et~al.(2025)Cen, Yu, Yuan, Jiang, Huang, Guo, Li, Song, Luo, Wang,
+  et~al.]{worldvla}
+Jun Cen, Chaohui Yu, Hangjie Yuan, Yuming Jiang, Siteng Huang, Jiayan Guo, Xin
+  Li, Yibing Song, Hao Luo, Fan Wang, et~al.
+\newblock Worldvla: Towards autoregressive action world model.
+\newblock \emph{arXiv preprint arXiv:2506.21539}, 2025.
+
+\bibitem[Chen et~al.(2025)Chen, Song, Ding, Zhou, Zhao, Tang, Wang, and
+  Li]{chen2025unified}
+Jiayi Chen, Wenxuan Song, Pengxiang Ding, Ziyang Zhou, Han Zhao, Feilong Tang,
+  Donglin Wang, and Haoang Li.
+\newblock Unified diffusion vla: Vision-language-action model via joint
+  discrete denoising diffusion process.
+\newblock \emph{arXiv preprint arXiv:2511.01718}, 2025.
+
+\bibitem[Cui et~al.(2025)Cui, Ding, Song, Bai, Tong, Ge, Suo, Zhou, Liu, Jia,
+  et~al.]{cui2025openhelix}
+Can Cui, Pengxiang Ding, Wenxuan Song, Shuanghao Bai, Xinyang Tong, Zirui Ge,
+  Runze Suo, Wanqi Zhou, Yang Liu, Bofang Jia, et~al.
+\newblock Openhelix: A short survey, empirical analysis, and open-source
+  dual-system vla model for robotic manipulation.
+\newblock \emph{arXiv preprint arXiv:2505.03912}, 2025.
+
+\bibitem[Deng et~al.(2025)Deng, Pan, Zhang, Liu, Luo, Cui, Wang, Shen, Shan,
+  Zhang, et~al.]{deng2025uniform}
+Haoge Deng, Ting Pan, Fan Zhang, Yang Liu, Zhuoyan Luo, Yufeng Cui, Wenxuan
+  Wang, Chunhua Shen, Shiguang Shan, Zhaoxiang Zhang, et~al.
+\newblock Uniform discrete diffusion with metric path for video generation.
+\newblock \emph{arXiv preprint arXiv:2510.24717}, 2025.
+
+\bibitem[Devlin et~al.(2019)Devlin, Chang, Lee, and Toutanova]{bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock In \emph{Proceedings of the 2019 conference of the North American
+  chapter of the association for computational linguistics: human language
+  technologies, volume 1 (long and short papers)}, pages 4171--4186, 2019.
+
+\bibitem[Dong et~al.(2026)Dong, Liu, Zhang, Ye, Yuan, Ni, Gong, Qiu, Zhao, Li,
+  et~al.]{dong2026actioncodec}
+Zibin Dong, Yicheng Liu, Shiduo Zhang, Baijun Ye, Yifu Yuan, Fei Ni, Jingjing
+  Gong, Xipeng Qiu, Hang Zhao, Yinchuan Li, et~al.
+\newblock Actioncodec: What makes for good action tokenizers.
+\newblock \emph{arXiv preprint arXiv:2602.15397}, 2026.
+
+\bibitem[Gat et~al.(2024)Gat, Remez, Shaul, Kreuk, Chen, Synnaeve, Adi, and
+  Lipman]{gat2024discrete}
+Itai Gat, Tal Remez, Neta Shaul, Felix Kreuk, Ricky~TQ Chen, Gabriel Synnaeve,
+  Yossi Adi, and Yaron Lipman.
+\newblock Discrete flow matching.
+\newblock In \emph{Proceedings of the 38th International Conference on Neural
+  Information Processing Systems}, pages 133345--133385, 2024.
+
+\bibitem[Havasi et~al.(2025)Havasi, Karrer, Gat, and Chen]{havasi2025edit}
+Marton Havasi, Brian Karrer, Itai Gat, and Ricky~TQ Chen.
+\newblock Edit flows: Flow matching with edit operations.
+\newblock \emph{arXiv preprint arXiv:2506.09018}, 2025.
+
+\bibitem[Huang et~al.(2025)Huang, Wu, Chen, Wang, and Yang]{huang2025thinkact}
+Chi-Pin Huang, Yueh-Hua Wu, Min-Hung Chen, Yu-Chiang~Frank Wang, and Fu-En
+  Yang.
+\newblock Thinkact: Vision-language-action reasoning via reinforced visual
+  latent planning.
+\newblock \emph{arXiv preprint arXiv:2507.16815}, 2025.
+
+\bibitem[Kim et~al.(2025)Kim, Pertsch, Karamcheti, Xiao, Balakrishna, Nair,
+  Rafailov, Foster, Sanketi, Vuong, et~al.]{kim2024openvla}
+Moo~Jin Kim, Karl Pertsch, Siddharth Karamcheti, Ted Xiao, Ashwin Balakrishna,
+  Suraj Nair, Rafael Rafailov, Ethan~P Foster, Pannag~R Sanketi, Quan Vuong,
+  et~al.
+\newblock Openvla: An open-source vision-language-action model.
+\newblock In \emph{Conference on Robot Learning}, pages 2679--2713. PMLR, 2025.
+
+\bibitem[Lee et~al.(2025)Lee, Duan, Fang, Deng, Liu, Li, Fang, Zhang, Wang,
+  Lee, et~al.]{lee2025molmoact}
+Jason Lee, Jiafei Duan, Haoquan Fang, Yuquan Deng, Shuo Liu, Boyang Li, Bohan
+  Fang, Jieyu Zhang, Yi~Ru Wang, Sangho Lee, et~al.
+\newblock Molmoact: Action reasoning models that can reason in space.
+\newblock \emph{arXiv preprint arXiv:2508.07917}, 2025.
+
+\bibitem[Li et~al.(2024)Li, Liu, Zhang, Yu, Xu, Wu, Cheang, Jing, Zhang, Liu,
+  et~al.]{li2024vision}
+Xinghang Li, Minghuan Liu, Hanbo Zhang, Cunjun Yu, Jie Xu, Hongtao Wu, Chilam
+  Cheang, Ya~Jing, Weinan Zhang, Huaping Liu, et~al.
+\newblock Vision-language foundation models as effective robot imitators.
+\newblock 2024.
+
+\bibitem[Liang et~al.(2025)Liang, Li, Yang, Wu, Mao, Nian, Pei, Zhou, Yang,
+  Pang, et~al.]{liang2025discrete}
+Zhixuan Liang, Yizhuo Li, Tianshuo Yang, Chengyue Wu, Sitong Mao, Tian Nian,
+  Liuao Pei, Shunbo Zhou, Xiaokang Yang, Jiangmiao Pang, et~al.
+\newblock Discrete diffusion vla: Bringing discrete diffusion to action
+  decoding in vision-language-action policies.
+\newblock \emph{arXiv preprint arXiv:2508.20072}, 2025.
+
+\bibitem[Liu et~al.(2023)Liu, Zhu, Gao, Feng, Liu, Zhu, and
+  Stone]{liu2023libero}
+Bo~Liu, Yifeng Zhu, Chongkai Gao, Yihao Feng, Qiang Liu, Yuke Zhu, and Peter
+  Stone.
+\newblock Libero: Benchmarking knowledge transfer for lifelong robot learning.
+\newblock \emph{arXiv preprint arXiv:2306.03310}, 2023.
+
+\bibitem[Liu et~al.(2024)Liu, Wu, Li, Tan, Chen, Wang, Xu, Su, and
+  Zhu]{liu2024rdt}
+Songming Liu, Lingxuan Wu, Bangguo Li, Hengkai Tan, Huayu Chen, Zhengyi Wang,
+  Ke~Xu, Hang Su, and Jun Zhu.
+\newblock Rdt-1b: a diffusion foundation model for bimanual manipulation.
+\newblock \emph{arXiv preprint arXiv:2410.07864}, 2024.
+
+\bibitem[Liu et~al.(2025)Liu, Zhang, Dong, Ye, Yuan, Yu, Yin, Lu, Shi, Yu,
+  et~al.]{liu2025faster}
+Yicheng Liu, Shiduo Zhang, Zibin Dong, Baijun Ye, Tianyuan Yuan, Xiaopeng Yu,
+  Linqi Yin, Chenhao Lu, Junhao Shi, Luca Jiang-Tao Yu, et~al.
+\newblock Faster: Toward efficient autoregressive vision language action
+  modeling via neural action tokenization.
+\newblock \emph{arXiv preprint arXiv:2512.04952}, 2025.
+
+\bibitem[Luo et~al.(2025)Luo, Xia, Wang, Chen, Shan, Luo, Yang, and
+  Chua]{luo2025next}
+Run Luo, Xiaobo Xia, Lu~Wang, Longze Chen, Renke Shan, Jing Luo, Min Yang, and
+  Tat-Seng Chua.
+\newblock Next-omni: Towards any-to-any omnimodal foundation models with
+  discrete flow matching.
+\newblock \emph{arXiv preprint arXiv:2510.13721}, 2025.
+
+\bibitem[Lynch and Sermanet(2020)]{lynch2020language}
+Corey Lynch and Pierre Sermanet.
+\newblock Language conditioned imitation learning over unstructured data.
+\newblock \emph{arXiv preprint arXiv:2005.07648}, 2020.
+
+\bibitem[Mees et~al.(2022)Mees, Hermann, Rosete-Beas, and
+  Burgard]{mees2022calvin}
+Oier Mees, Lukas Hermann, Erick Rosete-Beas, and Wolfram Burgard.
+\newblock Calvin: A benchmark for language-conditioned policy learning for
+  long-horizon robot manipulation tasks.
+\newblock \emph{IEEE Robotics and Automation Letters (RA-L)}, 7\penalty0
+  (3):\penalty0 7327--7334, 2022.
+
+\bibitem[Nguyen et~al.(2025)Nguyen, Havasi, Berrada, Zettlemoyer, and
+  Chen]{nguyen2025oneflow}
+John Nguyen, Marton Havasi, Tariq Berrada, Luke Zettlemoyer, and Ricky~TQ Chen.
+\newblock Oneflow: Concurrent mixed-modal and interleaved generation with edit
+  flows.
+\newblock \emph{arXiv preprint arXiv:2510.03506}, 2025.
+
+\bibitem[{Octo Team} et~al.(2024){Octo Team}, Ghosh, Walke, Pertsch, Black,
+  Mees, Dasari, Hejna, Xu, Luo, Kreiman, Tan, Sanketi, Vuong, Xiao, Sadigh,
+  Finn, and Levine]{octo_2023}
+{Octo Team}, Dibya Ghosh, Homer Walke, Karl Pertsch, Kevin Black, Oier Mees,
+  Sudeep Dasari, Joey Hejna, Charles Xu, Jianlan Luo, Tobias Kreiman, {You
+  Liang} Tan, Pannag Sanketi, Quan Vuong, Ted Xiao, Dorsa Sadigh, Chelsea Finn,
+  and Sergey Levine.
+\newblock Octo: An open-source generalist robot policy.
+\newblock In \emph{Proceedings of Robotics: Science and Systems}, Delft,
+  Netherlands, 2024.
+
+\bibitem[O’Neill et~al.(2024)O’Neill, Rehman, Maddukuri, Gupta, Padalkar,
+  Lee, Pooley, Gupta, Mandlekar, Jain, et~al.]{o2024open}
+Abby O’Neill, Abdul Rehman, Abhiram Maddukuri, Abhishek Gupta, Abhishek
+  Padalkar, Abraham Lee, Acorn Pooley, Agrim Gupta, Ajay Mandlekar, Ajinkya
+  Jain, et~al.
+\newblock Open x-embodiment: Robotic learning datasets and rt-x models: Open
+  x-embodiment collaboration 0.
+\newblock In \emph{2024 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 6892--6903. IEEE, 2024.
+
+\bibitem[Pertsch et~al.(2025)Pertsch, Stachowicz, Ichter, Driess, Nair, Vuong,
+  Mees, Finn, and Levine]{pertsch2025fast}
+Karl Pertsch, Kyle Stachowicz, Brian Ichter, Danny Driess, Suraj Nair, Quan
+  Vuong, Oier Mees, Chelsea Finn, and Sergey Levine.
+\newblock Fast: Efficient action tokenization for vision-language-action
+  models.
+\newblock \emph{arXiv preprint arXiv:2501.09747}, 2025.
+
+\bibitem[Qu et~al.(2025)Qu, Song, Chen, Yao, Ye, Ding, Wang, Gu, Zhao, Wang,
+  et~al.]{qu2025spatialvla}
+Delin Qu, Haoming Song, Qizhi Chen, Yuanqi Yao, Xinyi Ye, Yan Ding, Zhigang
+  Wang, JiaYuan Gu, Bin Zhao, Dong Wang, et~al.
+\newblock Spatialvla: Exploring spatial representations for
+  visual-language-action model.
+\newblock \emph{arXiv preprint arXiv:2501.15830}, 2025.
+
+\bibitem[Reuss et~al.(2025)Reuss, Pari, Agrawal, and Lioutikov]{reussefficient}
+Moritz Reuss, Jyothish Pari, Pulkit Agrawal, and Rudolf Lioutikov.
+\newblock Efficient diffusion transformer policies with mixture of expert
+  denoisers for multitask learning.
+\newblock In \emph{The Thirteenth International Conference on Learning
+  Representations}, 2025.
+
+\bibitem[Shaul et~al.(2024)Shaul, Gat, Havasi, Severo, Sriram, Holderrieth,
+  Karrer, Lipman, and Chen]{shaul2024flow}
+Neta Shaul, Itai Gat, Marton Havasi, Daniel Severo, Anuroop Sriram, Peter
+  Holderrieth, Brian Karrer, Yaron Lipman, and Ricky~TQ Chen.
+\newblock Flow matching with general discrete paths: A kinetic-optimal
+  perspective.
+\newblock \emph{arXiv preprint arXiv:2412.03487}, 2024.
+
+\bibitem[Song et~al.(2025{\natexlab{a}})Song, Chen, Ding, Huang, Zhao, Wang,
+  and Li]{song2025ceed}
+Wenxuan Song, Jiayi Chen, Pengxiang Ding, Yuxin Huang, Han Zhao, Donglin Wang,
+  and Haoang Li.
+\newblock Ceed-vla: Consistency vision-language-action model with early-exit
+  decoding.
+\newblock \emph{arXiv preprint arXiv:2506.13725}, 2025{\natexlab{a}}.
+
+\bibitem[Song et~al.(2025{\natexlab{b}})Song, Chen, Ding, Zhao, Zhao, Zhong,
+  Ge, Ma, and Li]{song2025accelerating}
+Wenxuan Song, Jiayi Chen, Pengxiang Ding, Han Zhao, Wei Zhao, Zhide Zhong,
+  Zongyuan Ge, Jun Ma, and Haoang Li.
+\newblock Accelerating vision-language-action model integrated with action
+  chunking via parallel decoding.
+\newblock In \emph{2025 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, 2025{\natexlab{b}}.
+
+\bibitem[Song et~al.(2025{\natexlab{c}})Song, Zhou, Zhao, Chen, Ding, Yan,
+  Huang, Tang, Wang, and Li]{song2025reconvla}
+Wenxuan Song, Ziyang Zhou, Han Zhao, Jiayi Chen, Pengxiang Ding, Haodong Yan,
+  Yuxin Huang, Feilong Tang, Donglin Wang, and Haoang Li.
+\newblock Reconvla: Reconstructive vision-language-action model as effective
+  robot perceiver.
+\newblock \emph{arXiv preprint arXiv:2508.10333}, 2025{\natexlab{c}}.
+
+\bibitem[Song et~al.(2026)Song, Chen, Sun, Lei, Qin, Zhao, Ding, Zhao, Wang,
+  Hou, Zhong, Yan, Wang, Ma, and Li]{song2026rethinking}
+Wenxuan Song, Jiayi Chen, Xiaoquan Sun, Huashuo Lei, Yikai Qin, Wei Zhao,
+  Pengxiang Ding, Han Zhao, Tongxin Wang, Pengxu Hou, Zhide Zhong, Haodong Yan,
+  Donglin Wang, Jun Ma, and Haoang Li.
+\newblock Rethinking the practicality of vision-language-action model: A
+  comprehensive benchmark and an improved baseline, 2026.
+
+\bibitem[Wang et~al.(2025{\natexlab{a}})Wang, Lai, Li, Zhang, Sun, Kang, Wu,
+  Li, and Luo]{wang2025fudoki}
+Jin Wang, Yao Lai, Aoxue Li, Shifeng Zhang, Jiacheng Sun, Ning Kang, Chengyue
+  Wu, Zhenguo Li, and Ping Luo.
+\newblock Fudoki: Discrete flow-based unified understanding and generation via
+  kinetic-optimal velocities.
+\newblock \emph{arXiv preprint arXiv:2505.20147}, 2025{\natexlab{a}}.
+
+\bibitem[Wang et~al.(2024)Wang, Zhang, Luo, Sun, Cui, Wang, Zhang, Wang, Li,
+  Yu, et~al.]{wang2024emu3}
+Xinlong Wang, Xiaosong Zhang, Zhengxiong Luo, Quan Sun, Yufeng Cui, Jinsheng
+  Wang, Fan Zhang, Yueze Wang, Zhen Li, Qiying Yu, et~al.
+\newblock Emu3: Next-token prediction is all you need.
+\newblock \emph{arXiv preprint arXiv:2409.18869}, 2024.
+
+\bibitem[Wang et~al.(2025{\natexlab{b}})Wang, Zhu, Liu, Yang, Fang, and
+  He]{wang2025vq}
+Yating Wang, Haoyi Zhu, Mingyu Liu, Jiange Yang, Hao-Shu Fang, and Tong He.
+\newblock Vq-vla: Improving vision-language-action models via scaling
+  vector-quantized action tokenizers.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 11089--11099, 2025{\natexlab{b}}.
+
+\bibitem[Wang et~al.(2025{\natexlab{c}})Wang, Ding, Li, Cui, Ge, Tong, Song,
+  Zhao, Zhao, Hou, Huang, Tang, Wang, Zhang, Liu, and Wang]{wang2025vlaadapter}
+Yihao Wang, Pengxiang Ding, Lingxiao Li, Can Cui, Zirui Ge, Xinyang Tong,
+  Wenxuan Song, Han Zhao, Wei Zhao, Pengxu Hou, Siteng Huang, Yifan Tang,
+  Wenhui Wang, Ru~Zhang, Jianyi Liu, and Donglin Wang.
+\newblock Vla-adapter: An effective paradigm for tiny-scale
+  vision-language-action model.
+\newblock \emph{arXiv preprint arXiv:2509.09372}, 2025{\natexlab{c}}.
+
+\bibitem[Wang et~al.(2025{\natexlab{d}})Wang, Li, Wang, Zhang, Li, Chen, Wang,
+  and Zhang]{univla}
+Yuqi Wang, Xinghang Li, Wenxuan Wang, Junbo Zhang, Yingyan Li, Yuntao Chen,
+  Xinlong Wang, and Zhaoxiang Zhang.
+\newblock Unified vision-language-action model.
+\newblock \emph{arXiv preprint arXiv:2506.19850}, 2025{\natexlab{d}}.
+
+\bibitem[Wen et~al.(2025{\natexlab{a}})Wen, Zhu, Liu, Liu, Yang, Zhang, Zhang,
+  Zhu, and Xu]{wen2025dvla}
+Junjie Wen, Minjie Zhu, Jiaming Liu, Zhiyuan Liu, Yicun Yang, Linfeng Zhang,
+  Shanghang Zhang, Yichen Zhu, and Yi~Xu.
+\newblock dvla: Diffusion vision-language-action model with multimodal
+  chain-of-thought.
+\newblock \emph{arXiv preprint arXiv:2509.25681}, 2025{\natexlab{a}}.
+
+\bibitem[Wen et~al.(2025{\natexlab{b}})Wen, Li, Gu, Zhao, Wang, and
+  Sun]{wen2025llada}
+Yuqing Wen, Hebei Li, Kefan Gu, Yucheng Zhao, Tiancai Wang, and Xiaoyan Sun.
+\newblock Llada-vla: Vision language diffusion action models.
+\newblock \emph{arXiv preprint arXiv:2509.06932}, 2025{\natexlab{b}}.
+
+\bibitem[Wu et~al.(2025)Wu, Zhang, Xue, Liu, Diao, Zhu, Luo, Han, and
+  Xie]{wu2025fast}
+Chengyue Wu, Hao Zhang, Shuchen Xue, Zhijian Liu, Shizhe Diao, Ligeng Zhu, Ping
+  Luo, Song Han, and Enze Xie.
+\newblock Fast-dllm: Training-free acceleration of diffusion llm by enabling kv
+  cache and parallel decoding.
+\newblock \emph{arXiv preprint arXiv:2505.22618}, 2025.
+
+\bibitem[Wu et~al.(2024)Wu, Jing, Cheang, Chen, Xu, Li, Liu, Li, and
+  Kong]{wu2023unleashing}
+Hongtao Wu, Ya~Jing, Chilam Cheang, Guangzeng Chen, Jiafeng Xu, Xinghang Li,
+  Minghuan Liu, Hang Li, and Tao Kong.
+\newblock Unleashing large-scale video generative pre-training for visual robot
+  manipulation.
+\newblock In \emph{International Conference on Learning Representations}, 2024.
+
+\bibitem[Yan et~al.(2026)Yan, Zhong, Zhu, He, Yuan, Song, Gong, Cai, Zhao, Yan,
+  Liu, Chen, and Li]{yan2026svam}
+Haodong Yan, Zhide Zhong, Jiaguan Zhu, Junjie He, Weilin Yuan, Wenxuan Song,
+  Xin Gong, Yingjie Cai, Guanyi Zhao, Xu~Yan, Bingbing Liu, Ying-Cong Chen, and
+  Haoang Li.
+\newblock S-vam: Shortcut video-action model by self-distilling geometric and
+  semantic foresight, 2026.
+\newblock \url{https://arxiv.org/abs/2603.16195}.
+
+\bibitem[Ye et~al.(2025{\natexlab{a}})Ye, Gong, Gao, Fan, Wu, Bi, Bai, Shang,
+  and Kong]{yedreamVLA}
+Jiacheng Ye, Shansan Gong, Jiahui Gao, Junming Fan, Shuang Wu, Wei Bi, Haoli
+  Bai, Lifeng Shang, and Lingpeng Kong.
+\newblock Dream-vl \& dream-vla: Open vision-language and
+  vision-language-action models with diffusion language model backbone.
+\newblock \emph{arXiv preprint arXiv:2512.22615}, 2025{\natexlab{a}}.
+
+\bibitem[Ye et~al.(2025{\natexlab{b}})Ye, Xie, Zheng, Gao, Wu, Jiang, Li, and
+  Kong]{ye2025dream}
+Jiacheng Ye, Zhihui Xie, Lin Zheng, Jiahui Gao, Zirui Wu, Xin Jiang, Zhenguo
+  Li, and Lingpeng Kong.
+\newblock Dream 7b: Diffusion large language models.
+\newblock \emph{arXiv preprint arXiv:2508.15487}, 2025{\natexlab{b}}.
+
+\bibitem[Yu et~al.(2025)Yu, Li, and Wang]{yu2025discrete}
+Runpeng Yu, Qi~Li, and Xinchao Wang.
+\newblock Discrete diffusion in large language and multimodal models: A survey.
+\newblock \emph{arXiv preprint arXiv:2506.13759}, 2025.
+
+\bibitem[Yue et~al.(2024)Yue, Wang, Kang, Han, Wang, Song, Feng, and
+  Huang]{yue2024deer}
+Yang Yue, Yulin Wang, Bingyi Kang, Yizeng Han, Shenzhi Wang, Shiji Song, Jiashi
+  Feng, and Gao Huang.
+\newblock Deer-vla: Dynamic inference of multimodal large language models for
+  efficient robot execution.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  37:\penalty0 56619--56643, 2024.
+
+\bibitem[Zhang et~al.(2025{\natexlab{a}})Zhang, Guo, Hu, Chen, Zhu, and
+  Chen]{zhang2025upvla}
+Jianke Zhang, Yanjiang Guo, Yucheng Hu, Xiaoyu Chen, Xiang Zhu, and Jianyu
+  Chen.
+\newblock Up-vla: A unified understanding and prediction model for embodied
+  agent.
+\newblock \emph{arXiv preprint arXiv:2501.18867}, 2025{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2025{\natexlab{b}})Zhang, Liu, Qi, Wang, Yu, Zhang, Dong,
+  He, Wang, Zhang, et~al.]{dreamvla25}
+Wenyao Zhang, Hongsi Liu, Zekun Qi, Yunnan Wang, Xinqiang Yu, Jiazhao Zhang,
+  Runpei Dong, Jiawei He, He~Wang, Zhizheng Zhang, et~al.
+\newblock Dreamvla: a vision-language-action model dreamed with comprehensive
+  world knowledge.
+\newblock \emph{arXiv preprint arXiv:2507.04447}, 2025{\natexlab{b}}.
+
+\bibitem[Zhao et~al.(2025)Zhao, Lu, Kim, Fu, Zhang, Wu, Li, Ma, Han, Finn,
+  et~al.]{zhao2025cot}
+Qingqing Zhao, Yao Lu, Moo~Jin Kim, Zipeng Fu, Zhuoyang Zhang, Yecheng Wu,
+  Zhaoshuo Li, Qianli Ma, Song Han, Chelsea Finn, et~al.
+\newblock Cot-vla: Visual chain-of-thought reasoning for vision-language-action
+  models.
+\newblock pages 1702--1713, 2025.
+
+\bibitem[Zheng et~al.(2022)Zheng, Vuong, Cai, and Phung]{zheng2022movq}
+Chuanxia Zheng, Tung-Long Vuong, Jianfei Cai, and Dinh Phung.
+\newblock Movq: Modulating quantized vectors for high-fidelity image
+  generation.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  35:\penalty0 23412--23425, 2022.
+
+\bibitem[Zhong et~al.(2025)Zhong, Yan, Li, Liu, Gong, Song, Chen, and
+  Li]{zhong2025flowvla}
+Zhide Zhong, Haodong Yan, Junfeng Li, Xiangchen Liu, Xin Gong, Wenxuan Song,
+  Jiayi Chen, and Haoang Li.
+\newblock Flowvla: Thinking in motion with a visual chain of thought.
+\newblock \emph{arXiv preprint arXiv:2508.18269}, 2025.
+
+\bibitem[Zhong et~al.(2026)Zhong, Li, He, Yan, Gong, Zhao, Cai, Gao, Yan, Liu,
+  Chen, Yang, and Li]{zhong2026dualcot}
+Zhide Zhong, Junfeng Li, Junjie He, Haodong Yan, Xin Gong, Guanyi Zhao, Yingjie
+  Cai, Jiantao Gao, Xu~Yan, Bingbing Liu, Yingcong Chen, Liuqing Yang, and
+  Haoang Li.
+\newblock Dualcot-vla: Visual-linguistic chain of thought via parallel
+  reasoning for vision-language-action models, 2026.
+\newblock \url{https://arxiv.org/abs/2603.22280}.
+
+\end{thebibliography}

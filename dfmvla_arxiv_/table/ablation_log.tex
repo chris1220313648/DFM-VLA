@@ -1,0 +1,40 @@
+\begin{table*}[t]
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\centering
+\small
+\caption{Comparison with various base models in terms of inference speed, average length, and execution frequency.}
+\label{tab:baselines}
+
+\begin{tabular}{@{} c c c c c @{}}
+\toprule
+Radical Decoding
+& Splits 
+& Speed (Tokens/s) 
+& Avg. Len. 
+& Freq. (Hz) \\
+\midrule
+
+log2
+& ABCD$\rightarrow$D 
+& 186.67 
+& 4.54 
+& 5.43 \\
+
+log3 
+& ABCD$\rightarrow$D 
+& 164.42
+& 4.50
+& 5.43  \\
+
+log4
+& ABCD$\rightarrow$D 
+& 144.71 
+& 4.56     
+& \textbf{5.43} \\
+
+\bottomrule
+\end{tabular}
+
+\vspace{-0.2cm}
+\end{table*}

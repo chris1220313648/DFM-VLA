@@ -1,0 +1,204 @@
+
+% % \end{table}
+% \begin{table*}[t]
+% \setlength{\tabcolsep}{4pt}
+% \renewcommand{\arraystretch}{0.9}
+% \centering
+% \small
+% \caption{Comparison with various base models in terms of inference speed, average length, task-wise success rates (Tasks Completed in a Row), and execution frequency.}
+% \label{tab:block_size}
+
+% \begin{tabular}{@{} c c c c c c c c c c @{}}
+% \toprule
+% \multirow{2}{*}{Block Size} 
+% & \multirow{2}{*}{Splits} 
+% & \multirow{2}{*}{Speed (Tokens/s)} 
+% & \multirow{2}{*}{Avg. Len.} 
+% & \multicolumn{5}{c}{Tasks Completed in a Row (\%)} 
+% & \multirow{2}{*}{Freq. (Hz)} \\
+% \cmidrule(lr){5-9}
+% & & & & 1/5 & 2/5 & 3/5 & 4/5 & 5/5 & \\
+% \midrule
+
+% 32
+% & ABCD$\rightarrow$D 
+% & 175.37
+% & 4.44 
+% & 0.976 &  0.944  & 0.892  & 0.844  & 0.78 
+% & 5.43 \tiny{(\textit{×2.4})} \\
+
+% 64 
+% & ABCD$\rightarrow$D 
+% & 186.67  
+% & 4.54
+% & 0.984 &  0.952 & 0.922 &  0.870 & 0.812 
+% & 5.43 \tiny{(\textit{×2.4})} \\
+
+% 128
+% & ABCD$\rightarrow$D 
+% & \textbf{151.30} 
+% & 4.36
+% & 0.984 &  0.926 & 0.863 &  0.818 & 0.766 
+% & \textbf{5.43\tiny{(\textit{×3.3})}} \\
+
+% \bottomrule
+% \end{tabular}
+
+% \vspace{-0.2cm}
+% \end{table*}
+% \begin{table}[t]
+% \setlength{\tabcolsep}{6pt}
+% \renewcommand{\arraystretch}{1.0}
+% \centering
+% \small
+% \caption{Average action length and decoding speedup under different block sizes on CALVIN.}
+% \label{tab:block_size}
+
+% \begin{tabular}{c c c c}
+% \toprule
+% Block Size & Splits & Avg. Len. & Speedup  \\
+% \midrule
+
+% 32  & ABCD$\rightarrow$D & 4.44 & 1.0 \\
+% 64  & ABCD$\rightarrow$D & 4.54 & 2.4 \\
+% 128 & ABCD$\rightarrow$D & 4.36 & \textbf{3.3} \\
+
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \begin{table}[t]
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{1.0}
+% \centering
+% \small
+% \caption{Block size ablation on CALVIN and LIBERO-10.}
+% \label{tab:blocksize_combined}
+
+% \begin{tabular}{c c c c c}
+% \toprule
+% \multirow{2}{*}{Block Size} 
+% & \multicolumn{2}{c}{CALVIN} 
+% & \multicolumn{2}{c}{LIBERO-10} \\
+% \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+% & Avg. Len. & Speedup ($\times$) 
+% & SR & Speedup ($\times$) \\
+% \midrule
+
+% \multicolumn{5}{c}{\textit{LIBERO-10}} \\
+% 8   & --   & --   & \textbf{0.752} & 3.71 \\
+% 14  & --   & --   & 0.732          & 4.85 \\
+% 16  & --   & --   & 0.744          & 5.04 \\
+% 28  & --   & --   & 0.734          & \textbf{5.42} \\
+
+% \midrule
+
+% \multicolumn{5}{c}{\textit{CALVIN}} \\
+% 32  & 4.44 & 1.0  & -- & -- \\
+% 64  & 4.54 & 2.4  & -- & -- \\
+% 128 & 4.36 & \textbf{3.3} & -- & -- \\
+
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \begin{table}[t]
+% \setlength{\tabcolsep}{6pt}
+% \renewcommand{\arraystretch}{1.0}
+% \centering
+% \small
+% \caption{Block size ablation on LIBERO-10. Speedup is computed with the baseline (98.78 tokens/s).}
+% \label{tab:blocksize_libero10}
+
+% \begin{tabular}{c c c}
+% \toprule
+% Block Size & Success Rate & Speedup ($\times$) \\
+% \midrule
+% 7   &  0.746  & 3.17 \\
+% 8   &  0.732  & 3.71 \\
+% 14  &  0.752         & 4.85 \\
+% 16  &  0.734         & 5.04 \\
+% 28  &  0.744        & \textbf{5.42} \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \begin{table}[t]
+% \setlength{\tabcolsep}{6pt}
+% \renewcommand{\arraystretch}{0.9}
+% \centering
+% \small
+% \caption{Block size ablation on LIBERO-10. Speedup is computed with the baseline (98.78 tokens/s).}
+% \label{tab:blocksize_libero10}
+
+% \begin{tabular}{c c c}
+% \toprule
+% Block Size & Success Rate & Speedup ($\times$) \\
+% \midrule
+
+
+% 7   & 0.746 & 3.17 \\
+% \rowcolor{gray!15}
+% 8   & 0.732 & 3.71 \\
+
+% 14  & \textbf{0.752} & 4.85 \\
+% \rowcolor{gray!15}
+% 16  & 0.734 & 5.04 \\
+% 28  & 0.744 & \textbf{5.42} \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \begin{table}[t]
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{0.95}
+% \centering
+% \small
+% \caption{Block size ablation on LIBERO-10 and CALVIN. Speedup is computed w.r.t. each dataset's baseline.}
+% \label{tab:blocksize_combined}
+
+% \begin{tabular}{c c c c c c}
+% \toprule
+% \multicolumn{3}{c}{LIBERO-10} & \multicolumn{3}{c}{CALVIN} \\
+% \cmidrule(lr){1-3} \cmidrule(lr){4-6}
+% Block & SR & Speedup ($\times$) 
+% & Block & Avg. Len. & Speedup ($\times$) \\
+% \midrule
+
+% 7   & 0.746 & 3.17  & 32  & 4.44 & 2.61 \\
+% \rowcolor{gray!15}
+% 8   & 0.732 & 3.71  & 64  & 4.54 & 2.77 \\
+% 14  & \textbf{0.752} & 4.85  & 128 & 4.36 & 2.55 \\
+% \rowcolor{gray!15}
+% 16  & 0.734 & 5.04  & 16  & 4.46   & 2.53 \\
+% 28  & 0.744 & \textbf{5.42} & 8  & 4.48   & 2.72 \\
+
+% \bottomrule
+% \end{tabular}
+% \end{table}
+\begin{table}[t]
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{0.95}
+\centering
+\small
+\caption{Ablation of Block Size  on LIBERO-10 and CALVIN. 
+% Speedup is computed w.r.t. each dataset's baseline.
+}
+\label{tab:blocksize_combined}
+
+\begin{tabular}{c c c |c c c}
+\toprule
+\multicolumn{3}{c}{LIBERO-10} & \multicolumn{3}{c}{CALVIN} \\
+\cmidrule(lr){1-3} \cmidrule(lr){4-6}
+Block & SR & Speedup ($\times$) 
+& Block & Avg. Len. & Speedup ($\times$) \\
+\midrule
+
+7   & 0.746 & 3.17  & 8   & 4.48 & 2.72 \\
+\rowcolor{gray!15}
+8   & 0.732 & 3.71  & 16  & 4.46 & 2.53 \\
+14  & \textbf{0.752} & 4.85  & 32  & 4.44 & 2.61 \\
+\rowcolor{gray!15}
+16  & 0.734 & 5.04  & 64  & 4.54 & 2.77 \\
+28  & 0.744 & \textbf{5.42} & 128 & 4.36 & 2.55 \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
